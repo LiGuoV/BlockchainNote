@@ -7,7 +7,7 @@
 > 以太币 以太坊平台的原生货币,为智能合约提供动力  
 **`代币(Tokens)`** 建立在以太坊平台上，可用于根据代币智能合约中指定的规则在不同方之间交换价值(交易使用赠送) 
 以太坊生态系统中的代币可以代表任何可替代（可替换）的可交易商品，例如货币、积分、金券、借条  两张1元钞票没有区别  
-> 或 **NTF**(不可替代的) 独特藏品，例如游戏道具,就像面积一样地价不一样的两块地
+> 或  **[NTF](http://erc721.org/)** (不可替代的) 独特藏品，例如机票,游戏道具,就像面积一样地价不一样的两块地
 > 发行代币 其实就是一种合约 包含帐户地址及其余额的映射 而余额单位是代币名称  
 > 这些币遵循以太坊定义的标准化规则
 > 
@@ -144,7 +144,7 @@ createrawtransaction
  - Infura 由于通过`geth`安装自己的节点下载的副本很大  
    infura可以远程连接到节点,这是将整个区块链下载到本地设备的轻量级替代方案
  - Ganache 启动`本地以太坊区块链` 实例的应用程序
- - Truffle 一个开发环境、测试框架和资产管道 
+ - [Truffle](https://trufflesuite.com/boxes/) 一个开发环境,预构,测试框架和资产管道 
  - Geth 以太坊区块链的golang实现，用于设置本地完整以太坊节点
  
 ## 2.2 Solidity
@@ -173,12 +173,16 @@ createrawtransaction
   - ERC-621 可增加供给和减少供给
 
 
-  - ERC-721 不可替代代币的标准接口
+  - ERC-721 [不可替代代币的标准接口](http://erc721.org/)
   - ERC-827
   - [查看发行的代币](https://etherscan.io/tokens)
 ## 2.4 创建代币  
   - [示例](code/mytoken.sol)
-  - 使用库 [OpenZeppelin](https://wizard.openzeppelin.com/) 快速构建 [示例](code/create-token)
+  - 使用库 [OpenZeppelin](https://wizard.openzeppelin.com/) 快速构建 
+    - [接口实现代码](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token)
+    - [使用示例](code/create-token)
+    - [Dapp ERC-20](https://github.com/LiGuoV/truffle-exercise-1) 
+    - [Dapp ERC-721](https://github.com/LiGuoV/truffle-exercise-2)
 
 # 3 架构
   - UML绘图 活动图,时序图,状态图,数据模型图  
