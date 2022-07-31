@@ -164,7 +164,8 @@ createrawtransaction
       - require(condition), 执行函数之前满足某些条件 
       - assert(condition)
   - [继承](code/inheritance) 可以多继承 所有代码都被复制生成一个合约  
-接口不能声明变量 声明函数没有功能体
+接口不能声明变量 声明函数没有功能体  
+    最典型例子:[ERO20代币接口示例](code/inheritance/ERC20.sol)
   - 事件 [示例](code/event.sol)
 ## 2.3 ERC(以太坊征求意见)-代币标准
   - ERC-20 可替代代币的标准接口
@@ -176,6 +177,8 @@ createrawtransaction
   - ERC-827
   - [查看发行的代币](https://etherscan.io/tokens)
 ## 2.4 创建代币  
+  - [示例](code/mytoken.sol)
+  - 使用库 [OpenZeppelin](https://wizard.openzeppelin.com/) 快速构建 [示例](code/create-token)
 
 # 3 架构
   - UML绘图 活动图,时序图,状态图,数据模型图  
