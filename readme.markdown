@@ -70,7 +70,7 @@
     一笔交易的Inputs 是另外一笔交易的`UTXO(unspent transaction output)` 
 ![image.png](images/交易.png)
 ![image.png](images/交易数据.png)
-![image.png](https://upload-images.jianshu.io/upload_images/11802299-aadbbf78713a6439.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](images/块数据.png)
   - ### 脚本 
     基于堆结构 [操作码](https://en.bitcoin.it/wiki/Script#Flow_control) 
     解锁脚本(包含解决方案) 解决 锁定脚本(指定了需要满足的条件) 将其评估为真  
@@ -189,8 +189,9 @@ createrawtransaction
   工具: 
     - [LucidChart](https://www.lucidchart.com/) 
     - [draw.io](https://www.draw.io/)
-  - Dapp堆栈  
+  ![](images/web3架构.jpg)
   ![](images/Dapp堆栈.png)
+  
   - 合约安全
 
 
